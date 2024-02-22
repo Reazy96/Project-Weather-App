@@ -1,0 +1,22 @@
+section {
+  padding: 100px;
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.output {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type="text"] {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.temp {
+  display: flex;
+}
