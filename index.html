@@ -7,23 +7,30 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <section>
-      <input type="text" class="city-input" />
-      <button class="btn">Wetter Check</button>
-      <div class="result">
-        <div class="condition"></div>
-        <div class="temp"></div>
-        <div class="time"></div>
-      </div>
-      <article>
-        <div class="wind output"></div>
-        <div class="cloud output"></div>
-        <div class="pressure output"></div>
-        <div class="humidity output"></div>
-        <div class="sunrise output"></div>
-        <div class="sunset output"></div>
-      </article>
-    </section>
+    <header>
+      <h1>🌞Wetter-Check.de🌞</h1>
+    </header>
+    <main>
+      <section>
+        <input type="text" class="city-input" value="Berlin" />
+        <button class="btn">Wetter Check</button>
+        <article class="result">
+          <div class="icon"></div>
+          <div class="condition"></div>
+          <div class="temp"></div>
+          <div class="time"></div>
+          <div class="country"></div>
+        </article>
+        <article>
+          <div class="wind output"></div>
+          <div class="cloud output"></div>
+          <div class="pressure output"></div>
+          <div class="humidity output"></div>
+          <div class="sunrise output"></div>
+          <div class="sunset output"></div>
+        </article>
+      </section>
+    </main>
 
     <script src="./main.js"></script>
   </body>
