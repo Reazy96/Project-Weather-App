@@ -3,35 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Wetter-Check.de</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
-      <h1>🌞Wetter-Check.de🌞</h1>
-    </header>
-    <main>
-      <section>
-        <input type="text" class="city-input" value="Berlin" />
-        <button class="btn">Wetter Check</button>
-        <article class="result">
-          <div class="icon"></div>
-          <div class="condition"></div>
-          <div class="temp"></div>
-          <div class="time"></div>
-          <div class="country"></div>
-        </article>
-        <article>
-          <div class="wind output"></div>
-          <div class="cloud output"></div>
-          <div class="pressure output"></div>
-          <div class="humidity output"></div>
-          <div class="sunrise output"></div>
-          <div class="sunset output"></div>
-        </article>
-      </section>
-    </main>
+    <div class="wrapper">
+      <header>
+        <h1>🌞Wetter-Check.de🌞</h1>
+      </header>
+      <main>
+        <section>
+          <div class="main-header">
+            <input type="text" class="city-input" placeholder="Suche nach Ort" />
+            <button class="btn">Wetter Check</button>
+          </div>
+          <article class="iconAndTempBox">
+            <div class="icon"></div>
+            <div class="temp output"></div>
+          </article>
 
-    <script src="./main.js"></script>
+          <div class="country"></div>
+
+          <article class="result">
+            <div class="time output"></div>
+            <div class="condition output"></div>
+          </article>
+          <article class="values">
+            <div class="wind output"><h3>Windgeschwindigkeit</h3></div>
+
+            <div class="humidity output"><h3>Luftfeuchtigkeit</h3></div>
+            <div class="sunrise output"><h3>Sonnenaufgang</h3></div>
+            <div class="sunset output"><h3>Sonnenuntergang</h3></div>
+          </article>
+        </section>
+      </main>
+
+      <script src="./main.js"></script>
+    </div>
   </body>
 </html>
